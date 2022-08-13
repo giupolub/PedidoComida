@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PedidoComida</string>
+    <string name="foods">Porções</string>
+    <string name="drinks">Bebidas</string>
+    <string name="tobacco_products">Tabacaria</string>
+    <string name="payment">Pagamento</string>
+
+</resources>
