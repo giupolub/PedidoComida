@@ -4,10 +4,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pedidocomida.databinding.RowProductListBinding
-import com.example.pedidocomida.model.ProductModel
+import com.example.pedidocomida.model.ProductsModel
 import com.example.pedidocomida.view.viewholder.ProductsViewHolder
 
-class ProductsAdapter(private val listProducts: MutableList<ProductModel>) : RecyclerView.Adapter<ProductsViewHolder>() {
+class ProductsAdapter(private val listProducts: MutableList<ProductsModel>) : RecyclerView.Adapter<ProductsViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductsViewHolder {
         val inflater = LayoutInflater.from(parent.context)
