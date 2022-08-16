@@ -1,4 +1,4 @@
-package com.example.pedidocomida
+package com.example.pedidocomida.view.tablayout
 
 import android.os.Bundle
 import android.view.LayoutInflater

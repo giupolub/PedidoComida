@@ -1,8 +1,12 @@
-package com.example.pedidocomida
+package com.example.pedidocomida.view.tablayout
 
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.example.pedidocomida.R
+import com.example.pedidocomida.view.tablayout.tabs.TabDrinksFragment
+import com.example.pedidocomida.view.tablayout.tabs.TabFoodsFragment
+import com.example.pedidocomida.view.tablayout.tabs.TabPaymentFragment
+import com.example.pedidocomida.view.tablayout.tabs.TabTobaccoFragment
 
 class TabPagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
 

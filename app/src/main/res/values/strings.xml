@@ -4,5 +4,8 @@
     <string name="drinks">Bebidas</string>
     <string name="tobacco_products">Tabacaria</string>
     <string name="payment">Pagamento</string>
+    <string name="product_title">Título</string>
+    <string name="product_description">Descrição do produto</string>
+    <string name="product_price">R$ 99,99</string>
 
 </resources>

@@ -1,4 +1,4 @@
-package com.example.pedidocomida
+package com.example.pedidocomida.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
