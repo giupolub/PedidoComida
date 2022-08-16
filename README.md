@@ -13,3 +13,4 @@ Técnicas:
 
 - `TabLayout`: fornece um layout horizontal para exibir guias
 - `ViewPager2`: navegação entre as guias do TabLayout em um formato deslizante
+- `RecyclerView`: exibição eficiente de grandes conjuntos de dados
