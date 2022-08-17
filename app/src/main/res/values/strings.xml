@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">PedidoComida</string>
+
     <string name="foods">Porções</string>
     <string name="drinks">Bebidas</string>
     <string name="tobacco_products">Tabacaria</string>
@@ -7,5 +8,12 @@
     <string name="product_title">Título</string>
     <string name="product_description">Descrição do produto</string>
     <string name="product_price">R$ 99,99</string>
+
+    <string name="email">E-mail</string>
+    <string name="password">Senha</string>
+    <string name="save_data">Salvar dados</string>
+    <string name="login">Entrar</string>
+    <string name="forget_password">Recuperar senha</string>
+    <string name="register">Realizar cadastro</string>
 
 </resources>
