@@ -13,7 +13,10 @@
     <string name="password">Senha</string>
     <string name="save_data">Salvar dados</string>
     <string name="login">Entrar</string>
-    <string name="forget_password">Recuperar senha</string>
-    <string name="register">Realizar cadastro</string>
+    <string name="recover_password_user">Recuperar senha</string>
+    <string name="register_user">Realizar cadastro</string>
+    <string name="name">Nome</string>
+    <string name="phone">Número</string>
+    <string name="register">Cadastrar</string>
 
 </resources>

@@ -10,7 +10,7 @@ data class ProductsModel(
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
-    val id: Int,
+    var id: Int,
 
     @ColumnInfo(name = "category")
     val category: String,
@@ -22,7 +22,7 @@ data class ProductsModel(
     val description: String,
 
     @ColumnInfo(name = "image")
-    val image: Bitmap,
+    val image: String,
 
     @ColumnInfo(name = "price")
     val price: String
