@@ -22,7 +22,7 @@ data class ProductsModel(
     val description: String,
 
     @ColumnInfo(name = "image")
-    val image: String,
+    val image: Int,
 
     @ColumnInfo(name = "price")
     val price: String

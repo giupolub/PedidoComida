@@ -1,9 +1,16 @@
 package com.example.pedidocomida.viewmodel
 
-import androidx.lifecycle.ViewModel
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 
-class TabFoodsViewModel : ViewModel() {
+class TabFoodsViewModel(application: Application) : AndroidViewModel(application) {
 
-    
+    private val _sum = MutableLiveData<Int>()
+    val sum: LiveData<Int> = _sum
 
+    fun sumProduct() {
+        
+    }
 }

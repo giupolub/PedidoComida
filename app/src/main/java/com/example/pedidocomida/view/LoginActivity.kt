@@ -20,6 +20,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         binding.buttonLogin.setOnClickListener(this)
         binding.textRecoverPassword.setOnClickListener(this)
         binding.textRegister.setOnClickListener(this)
+        binding.floatingActionButton.setOnClickListener(this)
 
 
     }
@@ -33,6 +34,8 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(Intent(this, RecoverPasswordActivity::class.java))
             R.id.text_register ->
                 startActivity(Intent(this, RegisterActivity::class.java))
+            R.id.floatingActionButton ->
+                startActivity(Intent(this, AddProductActivity::class.java))
         }
 
 
