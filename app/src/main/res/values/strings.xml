@@ -29,5 +29,6 @@
     <string name="price">Preço</string>
     <string name="example_price">R$ 50,00</string>
     <string name="add">Adicionar</string>
+    <string name="selection_image">Selecionar Imagem</string>
 
 </resources>

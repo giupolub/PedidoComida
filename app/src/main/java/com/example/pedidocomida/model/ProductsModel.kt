@@ -1,9 +1,9 @@
 package com.example.pedidocomida.model
 
-import android.graphics.Bitmap
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.sql.Blob
 
 @Entity(tableName = "Products")
 data class ProductsModel(
@@ -21,10 +21,10 @@ data class ProductsModel(
     @ColumnInfo(name = "description")
     val description: String,
 
-    @ColumnInfo(name = "image")
-    val image: Int,
-
     @ColumnInfo(name = "price")
-    val price: String
+    val price: String,
+
+    @ColumnInfo(name = "image")
+    val image: Int
 
 )
