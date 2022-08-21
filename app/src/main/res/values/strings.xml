@@ -19,16 +19,16 @@
     <string name="phone">Número</string>
     <string name="register">Cadastrar</string>
     <string name="_2">2</string>
-    <string name="category">Categoria</string>
-    <string name="title">Título</string>
+    <string name="category">Categoria:</string>
+    <string name="title">Título:</string>
     <string name="example_title">Batata Frita</string>
-    <string name="description">Descrição</string>
+    <string name="description">Descrição:</string>
     <string name="example_description">Porção de batata frita de 500g, fresquinha e feita na hora</string>
-    <string name="image">Imagem</string>
+    <string name="image">Imagem:</string>
     <string name="product_image">Imagem representativa do produto</string>
-    <string name="price">Preço</string>
+    <string name="price">Preço:</string>
     <string name="example_price">R$ 50,00</string>
-    <string name="add">Adicionar</string>
+    <string name="add">Adicionar Produto</string>
     <string name="selection_image">Selecionar Imagem</string>
 
 </resources>

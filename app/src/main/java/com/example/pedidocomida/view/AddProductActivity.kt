@@ -6,6 +6,7 @@ import android.graphics.Bitmap
 import android.graphics.ImageDecoder
 import android.net.Uri
 import android.os.Build
+import android.os.Build.VERSION_CODES.P
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
@@ -26,7 +27,7 @@ class AddProductActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var dialog: AlertDialog
 
     companion object {
-        private const val PERMISSION_GALLERY = android.Manifest.permission.READ_EXTERNAL_STORAGE
+        const val PERMISSION_GALLERY = android.Manifest.permission.READ_EXTERNAL_STORAGE
     }
 
     private val requestGallery =
@@ -43,7 +44,7 @@ class AddProductActivity : AppCompatActivity(), View.OnClickListener {
     private val resultGallery =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.data?.data != null) {
-                val bitmap: Bitmap = if (Build.VERSION.SDK_INT < 28) {
+                val bitmap: Bitmap = if (Build.VERSION.SDK_INT < P) {
                     MediaStore.Images.Media.getBitmap(
                         baseContext.contentResolver,
                         result.data?.data
@@ -55,7 +56,8 @@ class AddProductActivity : AppCompatActivity(), View.OnClickListener {
                     )
                     ImageDecoder.decodeBitmap(source)
                 }
-                binding.imageProduct.setImageBitmap(bitmap)}
+                binding.imageProduct.setImageBitmap(bitmap)
+            }
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -73,7 +75,9 @@ class AddProductActivity : AppCompatActivity(), View.OnClickListener {
         binding.imageProduct.setOnClickListener(this)
         binding.buttonAdd.setOnClickListener(this)
 
-        binding.buttonPickImage.setOnClickListener {verifyPermissionGallery()}
+        binding.buttonPickImage.setOnClickListener { verifyPermissionGallery() }
+
+
 
     }
 
@@ -83,20 +87,6 @@ class AddProductActivity : AppCompatActivity(), View.OnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
         }
 
-    }
-
-    private fun handleAddProduct() {
-
-//        val category = binding.spinnerCategory.toString()
-//        val title = binding.editTitle.text.toString()
-//        val description = binding.editDescription.text.toString()
-//        val price = binding.editPrice.text.toString()
-//        val image = binding.imageProduct.
-//
-//        val asdadas = ProductsModel(0, category, title, description, price, image)
-//
-//
-//        viewModel.insertProducts()
     }
 
     private fun verifyPermissionGallery() {
@@ -139,4 +129,23 @@ class AddProductActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun verifyPermission(permission: String) =
         ContextCompat.checkSelfPermission(this, permission) == PackageManager.PERMISSION_GRANTED
+
+    private fun handleAddProduct() {
+
+//        val bitmap = ImageDecoder.decodeBitmap(ImageDecoder.createSource())
+//        val image = binding.imageProduct.bitmap
+//
+//
+//
+//        val category = binding.spinnerCategory.toString()
+//        val title = binding.editTitle.text.toString()
+//        val description = binding.editDescription.text.toString()
+//        val price = binding.editPrice.text.toString()
+//        val image = binding.imageProduct.bitmap
+//
+//        val asdadas = ProductsModel(0, category, title, description, price, image)
+//
+//
+//        viewModel.insertProducts()
+    }
 }

@@ -2,8 +2,6 @@ package com.example.pedidocomida.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import com.example.pedidocomida.model.ProductsModel
 import com.example.pedidocomida.repository.ProductsRepository
 
