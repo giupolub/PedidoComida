@@ -1,4 +1,4 @@
-package com.example.pedidocomida
+package com.example.recantodosabia
 
 import org.junit.Test
 

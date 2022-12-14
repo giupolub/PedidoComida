@@ -1,34 +1,14 @@
 <resources>
-    <string name="app_name">PedidoComida</string>
-
-    <string name="foods">Porções</string>
-    <string name="drinks">Bebidas</string>
-    <string name="tobacco_products">Tabacaria</string>
-    <string name="payment">Pagamento</string>
-    <string name="product_title">Título</string>
-    <string name="product_description">Descrição do produto</string>
-    <string name="product_price">R$ 99,99</string>
-
-    <string name="email">E-mail</string>
-    <string name="password">Senha</string>
-    <string name="save_data">Salvar dados</string>
-    <string name="login">Entrar</string>
-    <string name="recover_password_user">Recuperar senha</string>
-    <string name="register_user">Realizar cadastro</string>
-    <string name="name">Nome</string>
-    <string name="phone">Número</string>
-    <string name="register">Cadastrar</string>
-    <string name="_2">2</string>
-    <string name="category">Categoria:</string>
+    <string name="app_name">Recanto do Sabia</string>
+    <string name="category_product">Categoria:</string>
     <string name="title">Título:</string>
-    <string name="example_title">Batata Frita</string>
-    <string name="description">Descrição:</string>
-    <string name="example_description">Porção de batata frita de 500g, fresquinha e feita na hora</string>
-    <string name="image">Imagem:</string>
-    <string name="product_image">Imagem representativa do produto</string>
+    <string name="example_title">Porção de Batata Frita</string>
     <string name="price">Preço:</string>
     <string name="example_price">R$ 50,00</string>
-    <string name="add">Adicionar Produto</string>
+    <string name="description">Descrição:</string>
+    <string name="example_description">Porção de batata frita de 500g, fresquinha e feita na hora.</string>
+    <string name="image">Imagem:</string>
+    <string name="example_image">Imagem representativa do produto</string>
     <string name="selection_image">Selecionar Imagem</string>
-
+    <string name="add_product">Adicionar Produto</string>
 </resources>
