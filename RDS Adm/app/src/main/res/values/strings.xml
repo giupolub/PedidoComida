@@ -11,4 +11,11 @@
     <string name="example_image">Imagem representativa do produto</string>
     <string name="selection_image">Selecionar Imagem</string>
     <string name="add_product">Adicionar Produto</string>
+
+    <string-array name="products">
+        <item>Alimento</item>
+        <item>Bebida</item>
+        <item>Tabacaria</item>
+    </string-array>
+
 </resources>
