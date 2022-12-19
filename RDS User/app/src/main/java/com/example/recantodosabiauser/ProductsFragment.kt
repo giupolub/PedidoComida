@@ -22,10 +22,10 @@ class ProductsFragment : Fragment() {
         viewModel = ViewModelProvider(this)[ProductsViewModel::class.java]
         _binding = FragmentProductsBinding.inflate(inflater,container, false)
 
-        //Layout da RecycleView
-        binding.recyclerProducts.layoutManager = LinearLayoutManager(context)
-        //Adapter da RecycleView
-        binding.recyclerProducts.adapter = ProductsAdapter()
+//        //Layout da RecycleView
+//        binding.recyclerProducts.layoutManager = LinearLayoutManager(context)
+//        //Adapter da RecycleView
+//        binding.recyclerProducts.adapter = ProductsAdapter()
 
         return binding.root
     }

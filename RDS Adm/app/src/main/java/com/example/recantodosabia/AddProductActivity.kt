@@ -46,8 +46,8 @@ class AddProductActivity : AppCompatActivity(), OnClickListener {
 
     private fun addProduct(title: String, price: String, description: String) {
         val mapProduct = hashMapOf(
-            "Price" to price,
-            "Description" to description
+            "price" to price,
+            "description" to description
         )
 
         db.collection(itemMenu).document(title)
