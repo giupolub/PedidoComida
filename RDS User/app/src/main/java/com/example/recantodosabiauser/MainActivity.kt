@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
                         val product: Product? = data.toObject(Product::class.java)
                         if (product != null) {
                             productList.add(product)
+
                         }
                     }
                     binding.recyclerProducts.adapter = ProductsAdapter(productList)

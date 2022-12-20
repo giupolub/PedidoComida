@@ -1,9 +1,9 @@
 package com.example.recantodosabiauser
 
 data class Product(
-    var title: String = "",
+    var title: String? = null,
 
-    var price: String = "",
+    var price: String? = null,
 
-    var description: String = ""
+    var description: String? = null
 )

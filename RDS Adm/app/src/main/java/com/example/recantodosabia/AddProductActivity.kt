@@ -46,18 +46,21 @@ class AddProductActivity : AppCompatActivity(), OnClickListener {
 
     private fun addProduct(title: String, price: String, description: String) {
         val mapProduct = hashMapOf(
+            "title" to title,
             "price" to price,
             "description" to description
         )
 
         db.collection(itemMenu).document(title)
-            .set(mapProduct).addOnCompleteListener { task ->
-                if (task.isSuccessful) {
-                    Toast.makeText(this, "Produto adicionado com sucesso", Toast.LENGTH_SHORT)
-                        .show()
-                    clearData()
-                }
-            }.addOnFailureListener { }
+            .set(mapProduct).addOnSuccessListener {
+                Toast.makeText(this, "Produto adicionado com sucesso", Toast.LENGTH_SHORT)
+                    .show()
+                clearData()
+
+            }.addOnFailureListener {
+                Toast.makeText(this, it.toString(), Toast.LENGTH_SHORT).show()
+
+            }
 
     }
 
