@@ -1,4 +1,4 @@
-## Recanto do Sabia
+## Recanto do Sabia [EM CONSTRUÇÃO]
 
 - Aplicativo que vem sendo elaborado com o intuito de facilitar o processo de venda de produtos em um estabelecimento real.
 
